@@ -3,7 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     overflow:hidden;
     margin:0px; padding:0px;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Metamorphous', cursive;
 }
 
 body * {
@@ -26,12 +26,18 @@ container {
 score {
     color:white;
     font-size : 22px;
-    padding:20px;
+    padding-left : 25%;
+    padding-top : 20px;
 }
 
 car {
     background-image: url(../images/car.png);
     width:145px; height: 45px;
+}
+
+bird {
+    background-image: url(../images/bird.png);
+    width:150px; height: 120px;
 }
 
 wheel {
@@ -46,18 +52,31 @@ rock {
 
 cloud {
     background-image: url(../images/cloud.png);
-    width:150px; height: 57px;
+    width:150px; height: 150px;
+    margin-top: -40px;
     animation: cloudanimation 15s linear infinite;
+}
+
+trafficlight {
+    background-image: url(../images/trafficlight.png);
+    height: 200px; 
+    width: 149px; 
+}
+
+trafficsign {
+    background-image: url(../images/trafficsign.png);
+    height: 204px; 
+    width: 204px; 
 }
 
 
 
 @keyframes cloudanimation {
   0% {
-    transform: translate(-150px, 30px);
+    transform: translate(800px, 30px);
   }
   
   100% {
-    transform: translate(800px, 30px);
+    transform: translate(-150px, 30px);
   }
 }

@@ -65,7 +65,8 @@ Gebruik maken van extensions (overerving)
 - Randomizer signs
 - Potentiele speed verhoging voor moeilijkheid
 
-# Collision detection
+# Uitlichten code
+### Collision Detection
 ```
     collisionCheck(c1:TrafficObject, c2:Bird): boolean {
         return !(c2.x > c1.x + c1.width || 
@@ -74,4 +75,17 @@ Gebruik maken van extensions (overerving)
                  c2.y + c2.height < c1.y);
     }
 } 
+```
+
+### Moving Bird
+```
+    public update(): void {
+        let targetY = this.y - this.upSpeed + this.downSpeed;
+        if (targetY > 0 && targetY + 100 < document.getElementById("container").clientHeight - 150) this.y = targetY;
+
+        let targetX = this.x + this.rightSpeed - this.leftSpeed;
+        if (targetX > 0 && targetX + 100 < document.getElementById("container").clientWidth - 50) this.x = targetX;
+
+        this.draw();
+    }
 ```

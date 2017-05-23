@@ -1,7 +1,7 @@
 class GameObject {
 
-    private _x : number;
-    private _y : number;
+    private _x : number = 0;
+    private _y : number = 0;
     private _div : HTMLElement;
 
     public get x(): number          {   return this._x;   }

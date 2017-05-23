@@ -18,21 +18,21 @@ Wat nog gedaan moet worden:
 - Poop.ts
 - BirdBehaviour met Poop en Move
 
-### Installatie instructies
+# Installatie instructies
 Omdat het hier gaat om een simpele typescript game zonder libraries is het een kwestie van forken en openen. Ook is hij te spelen via de live omgeving van Github.
 
-### Programmeerprincipes toegepast
+# Programmeerprincipes toegepast
 
-# Interface
+### Interface
 Op dit moment is er nog geen interface gebruikt. Dit gaat echter plaatsvinden via het Strategy Pattern (zie UML).
 
-# Static Utility Method
+### Static Utility Method
 Op dit moment nog geen static utility method. 
 
-# Singleton
+### Singleton
 Deze is as we speak in de maak, maar nog niet af dus niet mee gepusht. Nog kleine aanpassingen.
 
-# Encapsulation
+### Encapsulation
 ```
 class Game {
     private bird : Bird;
@@ -44,7 +44,7 @@ class Game {
 ```
 Private, Public en Protected (zie GameObject voor getters en setters.)
 
-# Inheritance
+### Inheritance
 ```
 class TrafficLight extends TrafficObject {
                    
@@ -57,7 +57,7 @@ class TrafficLight extends TrafficObject {
 ```
 Gebruik maken van extensions (overerving)
 
-### Overige info
+# Overige info
 - Veel gezeur gehad met de vogel laten bewegen (smooth)
 - Collision detection toegepast
 - Gameloop gemaakt inclusief scores
@@ -65,7 +65,7 @@ Gebruik maken van extensions (overerving)
 - Randomizer signs
 - Potentiele speed verhoging voor moeilijkheid
 
-### Collision detection
+# Collision detection
 ```
     collisionCheck(c1:TrafficObject, c2:Bird): boolean {
         return !(c2.x > c1.x + c1.width || 
